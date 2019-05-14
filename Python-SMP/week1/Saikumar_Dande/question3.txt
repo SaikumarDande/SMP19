@@ -1,0 +1,5 @@
+Output:
+	False
+	True
+Because l1 and l2 point to different object, id(l1) and id(l2) return differnt value. 
+While str1 and str2 point to same object, id(str1) and id(str2) return same value.

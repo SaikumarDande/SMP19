@@ -1,0 +1,10 @@
+The output in first case is ['1', 'S', 'T', 'E'] and ['1', 'S', 'T', 'E'].
+This is because, first while assigning list1 to list2, we are not assigning the values of list1 to list2,
+but we are creating a pointer to the object to which list1 is pointing to. So when we change the values 
+in list2, the values in list1 also change. When we wrote list1=list1+[], this will create a new object 
+to list1, so changes in list2 doesn't change in list1.
+
+The output in second case is ['1', 'S', 'T', 'E'] and ['1', 2,'T', 'E']
+Similar to case 1, after assigning list1 to list2, list1 values will change when list2 values will be changed.
+list1+=[] will not create a new object to list1, so changes in list2 will change list1 also.
+ 
